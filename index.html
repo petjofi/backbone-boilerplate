@@ -14,16 +14,39 @@
 </head>
 
 <body>
+
+<div id="wrapper">
+
+  <header role="header" id="header">
+    <h1 class="mx-auto">Ractive & Backbone - Node.JS Boilerplate</h1>
+  </header>
+
+  <nav role="navigation" id="nav">
+
+    <a href="#getting-started">Getting started</a>
+    <a href="#features">Features</a>
+    <a href="#development">Development</a>
+
+  </nav>
+
   <!-- Application container. -->
-  <main role="main" id="main"></main>
+  <div id="content">
+    <main role="main" id="main"></main>
+  </div>
 
-  <!-- Application source. -->
-  <!-- build:[src] /source.min.js -->
-  <script src="dist/source.js"></script>
-  <!-- /build -->
+  <footer role="footer" id="footer">
+    THIS IS THE FOOTER
+  </footer>
 
-  <!-- build:remove -->
-  <script src="http://localhost:35729/livereload.js"></script>
-  <!-- /build -->
+</div>
+
+<!-- Application source. -->
+<!-- build:[src] /source.min.js -->
+<script src="dist/source.js"></script>
+<!-- /build -->
+
+<!-- build:remove -->
+<script src="http://localhost:35729/livereload.js"></script>
+<!-- /build -->
 </body>
 </html>

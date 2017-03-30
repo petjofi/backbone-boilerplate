@@ -12,7 +12,7 @@ class Router extends Backbone.Router {
   }
 
   index() {
-    new HomePage({ el: 'main' }).render();
+    new HomePage({ el: 'main' }).load();
   }
 }
 

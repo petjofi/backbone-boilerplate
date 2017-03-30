@@ -1,3 +1,11 @@
-{%extend layouts/page as content%}
-  <h2>a modern web application architecture</h2>
-{%endextend%}
+<span>Hello {{user.name}}!</span>
+
+<ul>
+  {{#user.items}}
+  <li>{{name}} <button on-click="removeFromItems:{{this}}" class="h5">X</button></li>
+  {{/user.items}}
+</ul>
+
+<div>{{user.items.length}} Items</div>
+
+<button on-click="addToItems">Add</button>
